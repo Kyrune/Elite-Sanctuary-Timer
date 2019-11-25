@@ -8,22 +8,27 @@
 
   <body>
     <div class="container">
+      <!-- Start timer button -->
       <button class="startBtn" onClick="elite()">Start Timer</button>
+      <!-- Stop timer button -->
       <button class="stopBtn" onClick="stopTimer()">Stop Timer</button>
     </div>
 
     <script>
+      // Global variable for setInterval()
       var myInterval;
+
+      // Function sets 10 sec loop & adds beep sound
       function elite() {
         myInterval = setInterval(function() {
           var myTimeout = setTimeout(function() {
-            console.log("Ten seconds");
             var audio = new Audio("/sound/tone.wav");
             audio.play();
           }, 500);
         }, 10000);
       }
 
+      // Function stops timer
       function stopTimer() {
         clearInterval(myInterval);
       }
