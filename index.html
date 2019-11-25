@@ -11,5 +11,22 @@
       <button class="startBtn" onClick="elite()">Start Timer</button>
       <button class="stopBtn" onClick="stopTimer()">Stop Timer</button>
     </div>
+
+    <script>
+      var myInterval;
+      function elite() {
+        myInterval = setInterval(function() {
+          var myTimeout = setTimeout(function() {
+            console.log("Ten seconds");
+            var audio = new Audio("/sound/tone.wav");
+            audio.play();
+          }, 500);
+        }, 10000);
+      }
+
+      function stopTimer() {
+        clearInterval(myInterval);
+      }
+    </script>
   </body>
 </html>
