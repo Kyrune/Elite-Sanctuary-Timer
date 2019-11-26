@@ -31,6 +31,7 @@
       function startTimer() {
         myInterval = setInterval(function() {
           var myTimeout = setTimeout(function() {
+            // Sound file access
             var audio = new Audio("/sound/tone.wav");
             audio.play();
           }, 500);
