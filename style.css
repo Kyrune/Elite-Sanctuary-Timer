@@ -1,3 +1,7 @@
+/* Body styling */
+body {
+  background-color: rgb(31, 30, 30);
+}
 /* Div main container */
 .container {
   display: flex;
@@ -5,4 +9,33 @@
   justify-content: center;
   width: 70%;
   margin: auto;
+}
+
+/* h1 styling */
+h1 {
+  font-family: "Orbitron", sans-serif;
+  color: rgb(218, 214, 214);
+}
+/* Paragraph styling */
+.desc {
+  color: rgb(218, 214, 214);
+  font-family: "Asap Condensed", sans-serif;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Button styling */
+.btn {
+  padding: 50px;
+  font-size: 2em;
+  font-family: "Orbitron", sans-serif;
+  margin: 1em;
+  border-radius: 20px;
+  color: rgb(218, 214, 214);
+  background-color: rgb(19, 18, 18);
+  border: 5px solid rgb(75, 74, 74);
 }
