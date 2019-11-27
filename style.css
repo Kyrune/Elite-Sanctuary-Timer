@@ -1,14 +1,27 @@
-/* Body styling */
+/* Body styling with background image */
 body {
+  background-image: url("./images/excalibur.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-color: rgb(31, 30, 30);
 }
-/* Div main container */
+
+/* Div container */
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 55%;
+  padding-top: 1em;
+  padding-right: 3em;
+  padding-left: 3em;
+  padding-bottom: 25em;
   margin: auto;
+  margin-top: -1em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgba(31, 30, 30, 0.8);
 }
 
 /* h1 styling */
