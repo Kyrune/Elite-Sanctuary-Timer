@@ -1,0 +1,8 @@
+/* Div main container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+}
