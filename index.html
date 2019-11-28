@@ -12,15 +12,17 @@
 
   <body>
     <div class="container">
+      <!-- Project title -->
       <h1>Elite Sanctuary Timer</h1>
+      <!-- Project description -->
       <p class="desc">
         Have you ever played Warframe? Have you dabbled in the hardcore mode
         known as Elite Sanctuary? If you have, are you tired of counting down
         the seconds before you can nuke the map, but more often than not end up
         locked out of that sweet sweet nuking moment? Fret no longer! This Elite
         Sanctuary Timer comes with a hands-free looping timer that chimes gently
-        every ten seconds. Start and stop options also included to prevent slow
-        burning insanity!
+        every ten and a half seconds, giving you that half second to react.
+        Start and stop options also included to prevent slow burning insanity!
       </p>
       <div class="btn-container">
         <!-- Start timer button -->
@@ -30,19 +32,20 @@
       </div>
     </div>
 
+    <!-- JavaScript -->
     <script>
       // Global variable for setInterval()
       var myInterval;
 
-      // Function sets 10 sec loop & adds beep sound
+      // Function sets approx 10 sec loop & adds chime sound
       function startTimer() {
         myInterval = setInterval(function() {
           var myTimeout = setTimeout(function() {
-            // Sound file access
+            // Sound file access/play
             var audio = new Audio("/sound/tone.wav");
             audio.play();
-          }, 500);
-        }, 10000);
+          }, 100);
+        }, 10500);
       }
 
       // Function stops timer
