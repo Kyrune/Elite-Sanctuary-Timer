@@ -43,7 +43,10 @@
           var myTimeout = setTimeout(function() {
             // Sound file access/play
             var audio = new Audio("./sound/tone.wav");
-            audio.play();
+            var playPromise = audio.play();
+            if (playPromise !== undefined) {
+              playPromise.then(function() {}).catch(function(error) {});
+            }
           }, 100);
         }, 10500);
       }
