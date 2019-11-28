@@ -65,6 +65,16 @@ h1 {
   box-shadow: 0 0 20px rgb(78, 184, 245);
 }
 
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  background-color: rgb(0, 183, 255);
+  color: rgb(19, 18, 18);
+  transform: translateY(2px);
+}
+/* Button hover effect */
 .btn:hover {
   box-shadow: 0 0 40px rgb(78, 184, 245);
 }
