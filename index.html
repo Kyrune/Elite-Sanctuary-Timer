@@ -69,22 +69,27 @@
         clearInterval(myInterval);
       }
 
+      // Ensures the Stop button is hidden on window load
       window.onload = function() {
         document.getElementById("btn-stop").style.display = "none";
       };
 
+      // Makes the Stop button invisible
       function makeStopInv() {
         document.getElementById("btn-stop").style.display = "none";
       }
 
+      // Makes the Stop button visible
       function makeStopVis() {
         document.getElementById("btn-stop").style.display = "block";
       }
 
+      // Makes the Start button invisible
       function makeStartInv() {
         document.getElementById("btn-start").style.display = "none";
       }
 
+      // Makes the Start button visible
       function makeStartVis() {
         document.getElementById("btn-start").style.display = "block";
       }
