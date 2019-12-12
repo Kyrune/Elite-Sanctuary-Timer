@@ -27,9 +27,21 @@
       </p>
       <div class="btn-container">
         <!-- Start timer button -->
-        <button class="btn" onClick="startTimer()">START</button>
+        <button
+          class="btn"
+          id="btn-start"
+          onClick="startTimer();makeStartInv();makeStopVis();"
+        >
+          START
+        </button>
         <!-- Stop timer button -->
-        <button class="btn" onClick="stopTimer()">STOP</button>
+        <button
+          class="btn"
+          id="btn-stop"
+          onClick="stopTimer();makeStopInv();makeStartVis();"
+        >
+          STOP
+        </button>
       </div>
     </div>
 
@@ -55,6 +67,26 @@
       // Function stops timer
       function stopTimer() {
         clearInterval(myInterval);
+      }
+
+      window.onload = function() {
+        document.getElementById("btn-stop").style.display = "none";
+      };
+
+      function makeStopInv() {
+        document.getElementById("btn-stop").style.display = "none";
+      }
+
+      function makeStopVis() {
+        document.getElementById("btn-stop").style.display = "block";
+      }
+
+      function makeStartInv() {
+        document.getElementById("btn-start").style.display = "none";
+      }
+
+      function makeStartVis() {
+        document.getElementById("btn-start").style.display = "block";
       }
     </script>
   </body>
